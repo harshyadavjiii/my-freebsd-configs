@@ -1,0 +1,11 @@
+--- ./rc.d/nfsclient    2017-07-21 04:11:06.000000000 +0200
++++ /etc/rc.d/nfsclient 2017-12-18 09:15:38.200376000 +0100
+@@ -44,7 +44,7 @@
+        # successfully notified about a previous client shutdown.
+        # If there is no /var/db/mounttab, we do nothing.
+        if [ -f /var/db/mounttab ]; then
+-               rpc.umntall -k
++               rpc.umntall -k 2> /dev/null
+        fi
+ }
+ load_rc_config $name

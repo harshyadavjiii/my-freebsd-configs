@@ -1,0 +1,22 @@
+--- ./rc.d/random       2017-07-21 04:11:06.000000000 +0200
++++ /etc/rc.d/random    2018-01-09 13:32:18.439347000 +0100
+@@ -45,13 +45,13 @@
+ random_start()
+ {
+ 
+-       if [ ${harvest_mask} -gt 0 ]; then
+-               echo -n 'Setting up harvesting: '
+-               ${SYSCTL} kern.random.harvest.mask=${harvest_mask} > /dev/null
+-               ${SYSCTL_N} kern.random.harvest.mask_symbolic
+-       fi
++       # if [ ${harvest_mask} -gt 0 ]; then
++       #       echo -n 'Setting up harvesting: '
++       #       ${SYSCTL} kern.random.harvest.mask=${harvest_mask} > /dev/null
++       #       ${SYSCTL_N} kern.random.harvest.mask_symbolic
++       # fi
+ 
+-       echo -n 'Feeding entropy: '
++       echo -n 'Feeding entropy:'
+ 
+        if [ ! -w /dev/random ] ; then
+                warn "/dev/random is not writeable"
