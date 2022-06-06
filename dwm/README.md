@@ -22,5 +22,9 @@ Also, change the path of FREETYPEINC in config.mk
 I have not customise my Set-Up just changed the wallpaper of my choice, changed some colors for wallpaper theme and changed the statusbar to show necessary details and nothing fancy as I like to keep it minimal and straight forward to use.
 Couple of things is what I added are Support for volume keys and for that I have used mixer and not pulse audio. 
 
+
+![FreeBSD SS](https://user-images.githubusercontent.com/52949057/172211683-6f076da1-7cae-42db-a97b-7da6ee4b4c76.png)
+
+
 I have also added support for print keys by using scrot so whenever you will hit the print button on your keyboard it will take screenshot.
 Other than that I have created a simple dwmbar script that you can put in your .xprofile Or .xinitrc. 
