@@ -2,7 +2,9 @@
 ### (alias dwm)
 ---
 
-**Just To make Sure that dwm runs on FreeBSD install libXft and please change the path of include and lib directories in config.mk**
+***If you are using my repo all the paths are changed and dwm should be installed out of the box just run make clean install***
+
+**Otherwise, Just To make Sure that dwm runs on FreeBSD install libXft and please change the path of include and lib directories in config.mk**
   
      #pkg install libXft 
   
@@ -16,9 +18,7 @@ Also, change the path of FREETYPEINC in config.mk
 
      --FREETYPEINC = /usr/include/freetype2
      ++FREETYPEINC = /usr/local/include/freetype2
-  
-***If you are using my repo all the paths are changed and it should install out of the just make clean install***
-
+     
 I have not customise my Set-Up just changed the wallpaper of my choice, changed some colors for wallpaper theme and changed the statusbar to show necessary details and nothing fancy as I like to keep it minimal and straight forward to use.
 Couple of things is what I added are Support for volume keys and for that I have used mixer and not pulse audio. 
 
